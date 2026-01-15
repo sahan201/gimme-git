@@ -1,11 +1,8 @@
 #!/usr/bin/env node
-// this line above allows the script to be run as a CLI tool
 
 import fs from 'fs/promises';
-// fs/promises is used for promise-based file system operations
 
 const language = process.argv.slice(2)[0] || 'en';
-// get the language argument from command line, default to 'en'
 
 if (!language) {
   console.error('Please provide a language code (e.g., en, es, fr).');
